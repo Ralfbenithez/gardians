@@ -1,11 +1,19 @@
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 const About = () => {
-    return (
-      <div className="p-4 text-center">
-        <h1 className="text-2xl font-bold">À Propos de Nous</h1>
-        <p>Gardian's Assistance est une entreprise spécialisée dans le gardiennage et la sécurité.</p>
-      </div>
-    );
-  };
-  
-  export default About;
-  
+  return (
+    <div>
+      <Navbar />
+      <section className="p-10">
+        <h1 className="text-3xl font-bold">À propos de nous</h1>
+        <p className="mt-4">
+          Gardians est une entreprise spécialisée en sécurité et surveillance...
+        </p>
+      </section>
+      <Footer />
+    </div>
+  );
+};
+
+export default About;
